@@ -1867,11 +1867,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EverythingThatMatters\\Documents\\Scouting_App_Contributions\\ScoutingApp1\\ScoutingApp1.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\ScoutingApp1\\ScoutingApp1.csproj",
       "projectName": "ScoutingApp1",
-      "projectPath": "D:\\EverythingThatMatters\\Documents\\Scouting_App_Contributions\\ScoutingApp1\\ScoutingApp1.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\ScoutingApp1\\ScoutingApp1.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\EverythingThatMatters\\Documents\\Scouting_App_Contributions\\ScoutingApp1\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\ScoutingApp1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
