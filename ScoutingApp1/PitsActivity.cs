@@ -56,6 +56,7 @@ namespace ScoutingApp1
             swerve = FindViewById<RadioButton>(Resource.Id.radioPS4);
             slide = FindViewById<RadioButton>(Resource.Id.radioPS5);
             listviewP = FindViewById<ListView>(Resource.Id.listViewP);
+            
 
             fromPitHome.Click += delegate
             {
@@ -92,6 +93,8 @@ namespace ScoutingApp1
                 tbl.Team = number;
                 st.Team = number;
                 ist.Team = number;
+
+                //interesting issue-- it's not storing anything for the ints
 
                 tbl.RobotWeight = weight.Text;
                 if (mech.Checked)

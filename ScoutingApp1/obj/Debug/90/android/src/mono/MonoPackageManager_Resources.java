@@ -2,7 +2,6 @@ package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "ScoutingApp1.dll" comes first in this list. */
-		"ScoutingApp1.dll",
 		"Octokit.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Media.dll",

@@ -103,7 +103,22 @@ namespace ScoutingApp1
 
             var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
             {
-                PhotoSize = Plugin.Media.Abstractions.PhotoSize.MedBitmap bitmap = BitmapFactory.DecodeByteArray(tbl.Image, 0, tbl.Image.Length);
+                PhotoSize = Plugin.Media.Abstractions.PhotoSize.Medium,
+                CompressionQuality = 40,
+                Name = "icon.jpg",
+                Directory = "sample"
+            });
+            if (file == null)
+            {
+                return;
+            }
+            byte[] imageArray = System.IO.File.ReadAllBytes(file.Path);
+
+
+
+            tbl.Image = imageArray;
+            db.Insert(tbl);
+            Bitmap bitmap = BitmapFactory.DecodeByteArray(tbl.Image, 0, tbl.Image.Length);
             robotImage.SetImageBitmap(bitmap);
 
 
@@ -131,22 +146,7 @@ namespace ScoutingApp1
 
             Android.Support.V7.App.AlertDialog dialog = alertbuilder.Create();
             dialog.Show();
-ium,
-                CompressionQuality = 40,
-                Name = "icon.jpg",
-                Directory = "sample"
-            });
-            if (file == null)
-            {
-                return;
-            }
-            byte[] imageArray = System.IO.File.ReadAllBytes(file.Path);
 
-
-
-            tbl.Image = imageArray;
-            db.Insert(tbl);
-            
 
 
            

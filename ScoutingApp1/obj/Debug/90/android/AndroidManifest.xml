@@ -11,15 +11,6 @@
     <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.scoutingapp1.fileprovider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
     </provider>
-    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md595c32ac97a130346a04f6a42b8be548e.MainActivity">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-    <activity android:label="PitsActivity" android:name="md595c32ac97a130346a04f6a42b8be548e.PitsActivity" />
-    <activity android:label="ScoresActivity" android:name="md595c32ac97a130346a04f6a42b8be548e.ScoresActivity" />
-    <activity android:label="TrueScoresActivity" android:name="md595c32ac97a130346a04f6a42b8be548e.TrueScoresActivity" />
     <activity android:configChanges="orientation|screenSize" android:name="md54cd65ac53ae710bff80022afc423e0f3.MediaPickerActivity" />
     <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.BatteryBroadcastReceiver" />
