@@ -213,7 +213,7 @@ namespace Draft3
 
                 pits.Notes = notes.Text;
 
-                db.Insert(pits);
+               db.Insert(pits);
             }
             catch(Exception ex)
             {

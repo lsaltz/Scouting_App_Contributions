@@ -13,7 +13,6 @@ namespace Draft3
     {
         Button appBegin;
 
-
         readonly string[] permissionsask =
         {
             Manifest.Permission.ReadExternalStorage,

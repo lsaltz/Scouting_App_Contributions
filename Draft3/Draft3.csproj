@@ -60,6 +60,8 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GridAdapter.cs" />
+    <Compile Include="GridViewActivity.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="ImageTable.cs" />
     <Compile Include="MainActivity.cs" />
@@ -131,6 +133,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\photo_alert.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\grid_layout.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

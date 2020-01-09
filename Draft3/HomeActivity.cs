@@ -31,8 +31,18 @@ namespace Draft3
             viewData = FindViewById<Button>(Resource.Id.buttonHome3);
 
             CreateDB();
+
+            takePhotos.Click += TakePhoto;
+            viewData.Click += delegate
+            {
+                StartActivity(typeof(GridViewActivity));
+            };
+            toData.Click += delegate
+            {
+                StartActivity(typeof(PitsActivity));
+            };
         }
-       public string CreateDB()
+        public string CreateDB()
        {
             var output = "";
             output += "Creating Database if it doesn't exist";
