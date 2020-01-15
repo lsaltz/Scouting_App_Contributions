@@ -47,12 +47,11 @@ namespace Draft3
 
             ad = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, teamNumbers);
             grid.Adapter = ad;
-
-
-           grid.ItemClick += delegate(object sender, AdapterView.ItemClickEventArgs args)
-                {
-                    Toast.MakeText(this, "Item Clicked.", ToastLength.Short).Show();
-                }; 
+            grid.ItemClick += ShowClick;
+        }
+        public void ShowClick(object sender, AdapterView.ItemClickEventArgs e) {
+            
+            Toast.MakeText(this, "GridView item clicked : " + ad.GetItem(e.Position), ToastLength.Short).Show();
         }
     }
 }

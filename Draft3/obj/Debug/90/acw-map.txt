@@ -1,6 +1,3 @@
-Draft3.GridAdapter, Draft3;crc64d6cce91cbfa85221.GridAdapter
-Draft3.GridAdapter;crc64d6cce91cbfa85221.GridAdapter
-draft3.GridAdapter;crc64d6cce91cbfa85221.GridAdapter
 Draft3.GridViewActivity, Draft3;crc64d6cce91cbfa85221.GridViewActivity
 Draft3.GridViewActivity;crc64d6cce91cbfa85221.GridViewActivity
 draft3.GridViewActivity;crc64d6cce91cbfa85221.GridViewActivity

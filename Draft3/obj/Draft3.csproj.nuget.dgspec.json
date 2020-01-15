@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\ScoutingApp\\Draft3\\Draft3.csproj": {}
+    "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\Draft3\\Draft3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\ScoutingApp\\Draft3\\Draft3.csproj": {
+    "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\Draft3\\Draft3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\ScoutingApp\\Draft3\\Draft3.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\Draft3\\Draft3.csproj",
         "projectName": "Draft3",
-        "projectPath": "C:\\Users\\User\\Documents\\ScoutingApp\\Draft3\\Draft3.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\Draft3\\Draft3.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\ScoutingApp\\Draft3\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Scouting_App_Contributions\\Draft3\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

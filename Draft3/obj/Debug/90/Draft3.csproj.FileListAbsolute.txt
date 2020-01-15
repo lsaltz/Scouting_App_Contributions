@@ -847,7 +847,6 @@ C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\app_share
 C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\app_shared_libraries\x86\libxamarin-app.so
 C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\android\bin\classes.dex
-C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
 C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\stamp\_BuildAdditionalResourcesCache.stamp
 C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\stamp\_CleanIntermediateIfNuGetsChange.stamp
 C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\stamp\_CompileToDalvik.stamp
