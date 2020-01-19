@@ -1147,3 +1147,6 @@ C:\Users\User\Documents\ScoutingApp\Draft3\obj\Debug\90\stamp\_GenerateJavaStubs
 C:\Users\User\Documents\ScoutingApp\Draft3\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\User\Documents\ScoutingApp\Draft3\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\User\Documents\ScoutingApp\Draft3\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
+C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\res\layout\team_display.xml
+C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\android\src\crc64d6cce91cbfa85221\TeamDisplayActivity.java
+C:\Users\User\Documents\Scouting_App_Contributions\Draft3\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp

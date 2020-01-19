@@ -4231,6 +4231,9 @@ namespace Draft3
 			// aapt resource value: 0x7F0B003C
 			public const int support_simple_spinner_dropdown_item = 2131427388;
 			
+			// aapt resource value: 0x7F0B003D
+			public const int team_display = 2131427389;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

@@ -52,6 +52,7 @@ namespace Draft3
         public void ShowClick(object sender, AdapterView.ItemClickEventArgs e) {
             
             Toast.MakeText(this, "GridView item clicked : " + ad.GetItem(e.Position), ToastLength.Short).Show();
+            StartActivity(typeof(TeamDisplayActivity));
         }
     }
 }
