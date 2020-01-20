@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 
@@ -16,8 +17,9 @@ namespace Draft3
     public class GridViewActivity : Activity
     {
         GridView grid;
-        private ArrayAdapter<string> ad;
-        private readonly string[] teamNumbers = new string[]{
+        public ArrayAdapter<string> ad;
+
+        public static string[] teamNumbers = new string[]{
             "254",
             "1320",
             "235",
@@ -37,22 +39,37 @@ namespace Draft3
             "723",
             "112"
         };
+
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.grid_layout);
             grid = FindViewById<GridView>(Resource.Id.gridview);
-
-
             ad = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, teamNumbers);
+
             grid.Adapter = ad;
             grid.ItemClick += ShowClick;
         }
         public void ShowClick(object sender, AdapterView.ItemClickEventArgs e) {
-            
-            Toast.MakeText(this, "GridView item clicked : " + ad.GetItem(e.Position), ToastLength.Short).Show();
-            StartActivity(typeof(TeamDisplayActivity));
+            try
+            {
+                string tnd = ad.GetItem(e.Position);
+                SetContentView(Resource.Layout.team_display);
+                var tn = FindViewById<TextView>(Resource.Id.textViewtd1);
+                
+
+
+                Toast.MakeText(this, tnd, ToastLength.Short).Show();
+
+                tn.Text = tnd;
+                
+            }
+            catch(Exception ex)
+            {
+                Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
+            }
         }
     }
 }

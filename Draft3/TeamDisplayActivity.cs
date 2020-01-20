@@ -15,11 +15,14 @@ namespace Draft3
     [Activity(Label = "TeamDisplayActivity")]
     public class TeamDisplayActivity : Activity
     {
+        TextView tn;
+        GridViewActivity gv = new GridViewActivity();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.team_display);
+            
         }
     }
 }

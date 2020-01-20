@@ -1,1 +1,2 @@
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Success!" /></LinearLayout>
+
+  <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Success!" android:textAlignment="center" android:textSize="100px" android:id="@+id/textViewtd1" /></LinearLayout>
