@@ -16,9 +16,12 @@ external-path;C:\Users\saltz\Documents\Scouting_App_Contributions\Draft3\obj\Deb
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher.xml
 foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
 GridView;obj\Debug\90\res\layout\grid_layout.xml
+GridView;obj\Debug\90\res\layout\team_display.xml
+ImageView;obj\Debug\90\res\layout\image_display.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;obj\Debug\90\res\layout\activity_main.xml
 LinearLayout;obj\Debug\90\res\layout\home_display.xml
+LinearLayout;obj\Debug\90\res\layout\image_display.xml
 LinearLayout;obj\Debug\90\res\layout\photo_alert.xml
 LinearLayout;obj\Debug\90\res\layout\pits_display.xml
 LinearLayout;obj\Debug\90\res\layout\team_display.xml

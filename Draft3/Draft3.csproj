@@ -62,13 +62,13 @@
   <ItemGroup>
     <Compile Include="GridViewActivity.cs" />
     <Compile Include="HomeActivity.cs" />
+    <Compile Include="ImageAdapter.cs" />
     <Compile Include="ImageTable.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PitsActivity.cs" />
     <Compile Include="PitsTable.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeamDisplayActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -146,6 +146,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\team_display.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\image_display.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

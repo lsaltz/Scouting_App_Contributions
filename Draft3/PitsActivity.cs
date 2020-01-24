@@ -261,7 +261,7 @@ namespace Draft3
                 {
                     Toast.MakeText(this, "Select if Robot Can Climb", ToastLength.Long).Show();
                 }
-
+                
                 pits.Notes = notes.Text;
 
                db.Insert(pits);

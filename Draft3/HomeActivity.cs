@@ -32,7 +32,7 @@ namespace Draft3
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.home_display);
-            RequestPermissions(permissionsask, 0);
+            //RequestPermissions(permissionsask, 0);
             toData = FindViewById<Button>(Resource.Id.buttonHome1);
             takePhotos = FindViewById<Button>(Resource.Id.buttonHome2);
             viewData = FindViewById<Button>(Resource.Id.buttonHome3);
