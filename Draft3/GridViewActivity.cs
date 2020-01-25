@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -57,7 +58,7 @@ namespace Draft3
         public void ShowClick(object sender, AdapterView.ItemClickEventArgs e) {
             try
             {
-                string dpPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "ScoutingApp.db3");
+                string dpPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "ScoutingApp.db3");
                 var db = new SQLiteConnection(dpPath);
                 db.CreateTable<PitsTable>();
                 PitsTable pits = new PitsTable();
@@ -91,6 +92,13 @@ namespace Draft3
                     var gridview1 = FindViewById<GridView>(Resource.Id.gridViewtd1);
                     ImageAdapter adap = new ImageAdapter(this, queryP);
                     gridview1.Adapter = adap;
+                    gridview1.ItemClick += delegate
+                    {
+                        SetContentView(Resource.Layout.image_expand);
+                        ImageView expandable = FindViewById<ImageView>(Resource.Id.ImageViewE);
+                        Android.Graphics.Bitmap bmp = BitmapFactory.DecodeByteArray(p.Image, 0, p.Image.Length);
+                        expandable.SetImageBitmap(bmp);
+                    };
                 }
 
                 // Toast.MakeText(this, query.ToString(), ToastLength.Long).Show();
