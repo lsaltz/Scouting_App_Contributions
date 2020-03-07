@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "BCrypt.Net-PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/BCrypt.Net.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/BCrypt.Net.dll": {}
+        }
+      },
       "Plugin.CurrentActivity/2.1.0.2": {
         "type": "package",
         "frameworkAssemblies": [
@@ -845,6 +854,19 @@
     }
   },
   "libraries": {
+    "BCrypt.Net-PCL/1.0.1": {
+      "sha512": "+j2ExXi8h+/YjzZHcRKnfUmiFT46yf8Gc+SgVHsrGJsU+Z9nW68lmqCRW/mi/R0zAyYurJBOBLCP1BXU800rSA==",
+      "type": "package",
+      "path": "bcrypt.net-pcl/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.txt",
+        "bcrypt.net-pcl.1.0.1.nupkg.sha512",
+        "bcrypt.net-pcl.nuspec",
+        "lib/portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/BCrypt.Net.dll"
+      ]
+    },
     "Plugin.CurrentActivity/2.1.0.2": {
       "sha512": "uiMbA0G1ulSEj7MtGUQDDhzw80+QgvH5ts+Yt9cyft1dF4Eb0tYxiXAgNPuohJXpxhZmRs+6ZjL6QBaL/wUKDQ==",
       "type": "package",
@@ -1863,6 +1885,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "BCrypt.Net-PCL >= 1.0.1",
       "System.Data.Common >= 4.3.0",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
@@ -1910,6 +1933,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "BCrypt.Net-PCL": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "System.Data.Common": {
             "target": "Package",
             "version": "[4.3.0, )"

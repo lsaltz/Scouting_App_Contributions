@@ -38,6 +38,10 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "BCrypt.Net-PCL": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "System.Data.Common": {
               "target": "Package",
               "version": "[4.3.0, )"
