@@ -93,20 +93,21 @@ namespace Draft3
 
                     SetContentView(Resource.Layout.pin_alert);
                     enterPin = FindViewById<EditText>(Resource.Id.editTextpin);
-                      
-                    if(enterPin.Text == num)
+                    logintoaccount = FindViewById<Button>(Resource.Id.buttonregisterandlogin);
+                    logintoaccount.Click += delegate
                     {
-                        logintoaccount = FindViewById<Button>(Resource.Id.buttonregisterandlogin);
-                        logintoaccount.Click += delegate
-                        {
+                        if (enterPin.Text == num)
+                    {
+
                             StartActivity(typeof(LogInActivity));
-                        };
+                       
 
                     }
                     else
                     {
                         Toast.MakeText(this, "Try again", ToastLength.Long).Show();
-                    }
+                        }
+                    };
                 }
                 else
                 {
