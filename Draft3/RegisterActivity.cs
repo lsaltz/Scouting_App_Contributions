@@ -28,13 +28,14 @@ namespace Draft3
         EditText email;
         Button create;
         Button back;
+        Button logintoaccount;
+        EditText enterPin;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.register_layout);
 
-            
             teamNumber = FindViewById<EditText>(Resource.Id.editTextteamm);
             user = FindViewById<EditText>(Resource.Id.editTextname);
             pass = FindViewById<EditText>(Resource.Id.editTextpass1);
@@ -42,6 +43,7 @@ namespace Draft3
             email = FindViewById<EditText>(Resource.Id.editTextemail);
             create = FindViewById<Button>(Resource.Id.buttonCreate);
             back = FindViewById<Button>(Resource.Id.buttonBack);
+            
 
             back.Click += delegate
             {
@@ -73,7 +75,7 @@ namespace Draft3
                     string num = random.Next(0, 9999).ToString("D4");
                     userT.PIN = Int32.Parse(num);
 
-                   MailMessage message = new MailMessage();
+                    MailMessage message = new MailMessage();
                     var smtp = new SmtpClient();
                     message.From = new MailAddress("scoutingapp13x@gmail.com");
                     message.To.Add(new MailAddress(email.Text));
@@ -86,8 +88,25 @@ namespace Draft3
                     smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new NetworkCredential("scoutingapp13x@gmail.com", "thisisanewpassword");
                     smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                    smtp.Send(message);
+                    smtp.Send(message); 
                     Toast.MakeText(this, "Sent to " + email.Text, ToastLength.Long).Show();
+
+                    SetContentView(Resource.Layout.pin_alert);
+                    enterPin = FindViewById<EditText>(Resource.Id.editTextpin);
+                      
+                    if(enterPin.Text == num)
+                    {
+                        logintoaccount = FindViewById<Button>(Resource.Id.buttonregisterandlogin);
+                        logintoaccount.Click += delegate
+                        {
+                            StartActivity(typeof(LogInActivity));
+                        };
+
+                    }
+                    else
+                    {
+                        Toast.MakeText(this, "Try again", ToastLength.Long).Show();
+                    }
                 }
                 else
                 {

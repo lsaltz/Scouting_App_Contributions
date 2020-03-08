@@ -16,6 +16,7 @@
     </provider>
     <activity android:label="GridView" android:name="crc64d6cce91cbfa85221.GridViewActivity" />
     <activity android:label="HomeActivity" android:name="crc64d6cce91cbfa85221.HomeActivity" />
+    <activity android:label="LogInActivity" android:name="crc64d6cce91cbfa85221.LogInActivity" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="crc64d6cce91cbfa85221.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

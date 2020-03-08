@@ -64,6 +64,7 @@
     <Compile Include="HomeActivity.cs" />
     <Compile Include="ImageAdapter.cs" />
     <Compile Include="ImageTable.cs" />
+    <Compile Include="LogInActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="PitsActivity.cs" />
     <Compile Include="PitsTable.cs" />
@@ -169,6 +170,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\register_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\pin_alert.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\log_in.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

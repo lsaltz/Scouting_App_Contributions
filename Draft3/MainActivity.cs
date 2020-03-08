@@ -29,7 +29,7 @@ namespace Draft3
 
             LogIn.Click += delegate
             {
-                StartActivity(typeof(HomeActivity));
+                StartActivity(typeof(LogInActivity));
             };
         }
     }
