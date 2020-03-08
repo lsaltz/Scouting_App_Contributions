@@ -14,13 +14,13 @@ using SQLite;
 using BCrypt.Net;
 using BCrypt = BCrypt.Net.BCrypt;
 using System.Net.Mail;
+using System.Net;
 
 namespace Draft3
 {
     [Activity(Label = "RegisterActivity")]
     public class RegisterActivity : Activity
     {
-        EditText name;
         EditText teamNumber;
         EditText user;
         EditText pass;
@@ -61,14 +61,33 @@ namespace Draft3
 
                 if(pass.Text == rePass.Text)
                 {
-                    Random random = new Random();
-                    string num = random.Next(0, 9999).ToString("D4");
+                   
                     string inputPass = global::BCrypt.Net.BCrypt.HashPassword(pass.Text, global::BCrypt.Net.BCrypt.GenerateSalt());
-                    userT.PIN = Int32.Parse(num);
+                    
                     userT.Team = Int32.Parse(teamNumber.Text);
                     userT.Name = user.Text;
                     userT.Passcode = inputPass;
                     userT.Email = email.Text;
+
+                    Random random = new Random();
+                    string num = random.Next(0, 9999).ToString("D4");
+                    userT.PIN = Int32.Parse(num);
+
+                   MailMessage message = new MailMessage();
+                    var smtp = new SmtpClient();
+                    message.From = new MailAddress("scoutingapp13x@gmail.com");
+                    message.To.Add(new MailAddress(email.Text));
+                    message.Subject = "Test";
+                    message.IsBodyHtml = true;
+                    message.Body = num;
+                    smtp.Port = 587;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.EnableSsl = true;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new NetworkCredential("scoutingapp13x@gmail.com", "thisisanewpassword");
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Send(message);
+                    Toast.MakeText(this, "Sent to " + email.Text, ToastLength.Long).Show();
                 }
                 else
                 {
@@ -80,28 +99,5 @@ namespace Draft3
                 Toast.MakeText(this, ex.ToString(), ToastLength.Long).Show();
             }
         }
-        public static void SendEmail(string htmlString)
-        {
-            try
-            {
-
-              /*  MailMessage message = new MailMessage();
-                SmtpClient smtp = new SmtpClient();
-                message.From = new MailAddress("emailaddress@gmail.com");
-                message.To.Add(new MailAddress(email.Text));
-                message.Subject = "Test";
-                message.IsBodyHtml = true; //to make message body as html  
-                message.Body = htmlString;
-                smtp.Port = 587;
-                smtp.Host = "smtp.gmail.com"; //for gmail host  
-                smtp.EnableSsl = true;
-                smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new NetworkCredential("emailaddress@gmail.com", "password");
-                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Send(message);*/
-            }
-            catch (Exception) { }
-        }
-
     }
 }

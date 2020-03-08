@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[1.0.1, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
             "System.Data.Common": {
               "target": "Package",
               "version": "[4.3.0, )"

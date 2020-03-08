@@ -4,6 +4,9 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Draft3.dll" comes first in this list. */
 		"Draft3.dll",
 		"BCrypt.Net.dll",
+		"BouncyCastle.dll",
+		"MailKit.dll",
+		"MimeKit.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",

@@ -1,3 +1,6 @@
+BouncyCastle
+MailKit
+MimeKit
 Plugin.CurrentActivity
 Plugin.Media
 Plugin.Permissions
